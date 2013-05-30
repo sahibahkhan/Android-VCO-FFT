@@ -57,7 +57,7 @@ Any smartphone that has a microphone input jack and a recorder can be used as a 
 ###Future Hardware Enhancements
 
 
-1) Wire up additional Frequency to Voltage Converter
+1) Wire up second LM331N as a Frequency to Voltage Converter on the headphone output -- this would function as a DCA and a potential way to get data to a device (Arduino TM anyone?).
 
 
 ###Future Software Enhancements
