@@ -7,7 +7,8 @@ Android-VCO-FFT
 This is Android Code for a Fourier Frequency Reading and Peak Analysis of a Texas Instruments Voltage Controlled Oscillator.
 
 
-###Motivation: Low-Cost Data-Logger (<$10), Utilizing Existing Smartphones for Graphic Display
+###Motivation: 
+####Low-Cost Data-Logger (<$10), Utilizing Existing Smartphones for Analysis, Web-Connectivity, & Display
 
 Existing data-loggers are extremely expensive and lack both web-connectivity and the ability for students to take them home.
 
