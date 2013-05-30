@@ -2,13 +2,13 @@ Android-VCO-FFT
 ===============
 
 
-Summary
--------
+###Summary
+
 This is Android Code for a Fourier Frequency Reading and Peak Analysis of a Texas Instruments Voltage Controlled Oscillator.
 
 
-Motivation: Low-Cost Data-Logger (<$10), Utilizing Existing Smartphones for Graphic Display
-------
+###Motivation: Low-Cost Data-Logger (<$10), Utilizing Existing Smartphones for Graphic Display
+
 Existing data-loggers are extremely expensive and lack both web-connectivity and the ability for students to take them home.
 
 This serves the dual purposes of creating an extremely low-cost solution for voltage levels as well as forging a path for students to continue their scientific education anywhere (as it is literally mobile device). 
@@ -18,30 +18,29 @@ Since most of my students have Smartphones, I designed, prototyped, and ironed o
 *Android POC is available for now, I will create an IPhone version of this app as well (in addition to a donate version which looks a little bit more shiny).
 
 
-Other Possible Uses
-------
+###Other Possible Uses
+
 As a Simple ADC solution for analog medical data (patient temperature, spectroscopy measurements, soil-resistivity, etc.)
 
 
-Licensing
-------
+###Licensing
 
 Against my better financial interests, but I am considering (just considering) an MIT License for this code -- maybe.
 
 
-Details
-------
+###Details
+
 This is for now a slow measurement technique (I believe I can get it to around 100 ms refresh rate eventually, from observation of currently published FFT apps on the Google Play Store).
 
 
-Future Hardware Enhancements
-------
+###Future Hardware Enhancements
+
 
 1) Wire up additional Frequency to Voltage Converter
 
 
-Future Software Enhancements
-------
+###Future Software Enhancements
+
 1) Email data in CSV Format
 
 2) Increasing resolution by Quadratic Interpolation: Logging of the nearest neighbors of max measured freq (FFT-Mode) and doing quadratic interpolation to find more precise estimate of max-freq.
