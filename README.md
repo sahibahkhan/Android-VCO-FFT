@@ -4,7 +4,7 @@ Android-VCO-FFT
 
 ###Summary
 
-This is Android Code for a Fourier Frequency Reading and Peak Analysis of a Texas Instruments Voltage Controlled Oscillator.
+This is Android Code for a Fourier Frequency Reading and Peak Analysis of a Texas Instruments LM331N Voltage Controlled Oscillator.
 
 
 ###Motivation: 
