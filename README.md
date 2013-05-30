@@ -19,9 +19,9 @@ Since most of my students have Smartphones, I designed, prototyped, and ironed o
 *Android POC is available for now, I will create an IPhone version of this app as well (in addition to a donate version which looks a little bit more shiny).
 
 
-###Other Possible Uses
+###Uses:
 
-As a Simple ADC solution for analog medical data (patient temperature, spectroscopy measurements, soil-resistivity, etc.)
+As a simple web-service-connectable solution for analog medical-diagnostic or engineering/scientific data analysis (patient temperature, spectroscopy measurements, soil-resistivity, etc.)
 
 
 ###Licensing
