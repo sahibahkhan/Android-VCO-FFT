@@ -24,14 +24,34 @@ Since most of my students have Smartphones, I designed, prototyped, and ironed o
 As a simple web-service-connectable solution for analog medical-diagnostic or engineering/scientific data analysis (patient temperature, spectroscopy measurements, soil-resistivity, etc.)
 
 
-###Licensing
+###Licensing:
 
 Against my better financial interests, but I am considering (just considering) an MIT License for this code -- maybe.
 
 
-###Details
+###Details:
 
 This is for now a slow measurement technique (I believe I can get it to around 100 ms refresh rate eventually, from observation of currently published FFT apps on the Google Play Store).
+
+
+
+
+###Hardware:
+
+
+#### Choice of VCO Integrated Circuit
+For this project I used the LM331N as a low-cost, single-rail, Voltage-to-Frequency converter. (Link to datasheet)
+It is wired as the datasheet suggests for single-rail operation,* and the inverse function of the V2F is used to retrieve the voltage.
+
+
+*Important Modification: A voltage-divider at the end is necessary for reducing the peak-to-pead output voltage (somewhere on StackOverflow, I learned that the input for most phones caps at 1.7 volts).
+
+
+#### Use the Input Jack for higher-fidelity (but also can simply use a speaker and the regular cell phone mic)
+The hardware can utilize either the microphone-input-jack (for highest-fidelity) or even the regular microphone (default).
+Any smartphone that has a microphone input jack and a recorder can be used as a datalogger (well technically even without the mic-input-jack since we can perform frequency-space decomposition on any sound file).
+
+
 
 
 ###Future Hardware Enhancements
