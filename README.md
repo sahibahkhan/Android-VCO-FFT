@@ -39,7 +39,7 @@ This is for now a slow measurement technique (I believe I can get it to around 1
 ###Hardware:
 
 
-#### Choice of VCO Integrated Circuit
+#### VCO Chosen: The LM331N
 For this project I used the LM331N as a low-cost, single-rail, Voltage-to-Frequency converter. (Link to datasheet)
 It is wired as the datasheet suggests for single-rail operation,* and the inverse function of the V2F is used to retrieve the voltage.
 
@@ -47,20 +47,22 @@ It is wired as the datasheet suggests for single-rail operation,* and the invers
 *Important Modification: A voltage-divider at the end is necessary for reducing the peak-to-pead output voltage (somewhere on StackOverflow, I learned that the input for most phones caps at 1.7 volts).
 
 
-#### Use the Input Jack for higher-fidelity (but also can simply use a speaker and the regular cell phone mic)
+#### Input Jack  
 The hardware can utilize either the microphone-input-jack (for highest-fidelity) or even the regular microphone (default).
 Any smartphone that has a microphone input jack and a recorder can be used as a datalogger (well technically even without the mic-input-jack since we can perform frequency-space decomposition on any sound file).
 
+I have successfully used this on Android tablets and Android phones which have mic input jacks (all credit card readers use mic input jacks, and most of the older ones I've tried also have them).
 
 
 
 ###Future Hardware Enhancements
 
 
-1) Wire up second LM331N as a Frequency to Voltage Converter on the headphone output -- this would function as a DCA and a potential way to get data to a device (Arduino TM anyone?).
-
+1) Wire up second LM331N as a Frequency to Voltage Converter on the headphone output -- this would function as a DCA and a potential way to get data to a device (control of IC Potentiometers, although I'll have to see if I can generate fast enough signals to do serial communication -- which I could do already via USB but would save on the user-end complexity of setup).
 
 ###Future Software Enhancements
+
+0) Utilizing data on hardware capability to prevent over-spawning of threads (I currently have it hard-coded to a relatively slow 1 sample per second, which works on all my devices)
 
 1) Email data in CSV Format
 
@@ -79,7 +81,3 @@ Any smartphone that has a microphone input jack and a recorder can be used as a 
 .
 
 ?) Implement wavelet analysis while taking larger chunks of data -- this will allow more rapid measurements with the trade off of doing post-processing (lower screen refresh rate -- which is okay if you simply want the device to take samples and come back later).
-
-
-
-
